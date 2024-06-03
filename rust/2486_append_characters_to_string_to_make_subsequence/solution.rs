@@ -1,5 +1,3 @@
-struct Solution {}
-
 impl Solution {
     pub fn append_characters(s: String, t: String) -> i32 {
         let mut it = t.bytes().peekable();
@@ -8,8 +6,4 @@ impl Solution {
         }
         it.len() as i32
     }
-}
-fn main() {
-    let res = Solution::append_characters(String::from("coaching"), String::from("coding"));
-    println!("{}", res);
 }
